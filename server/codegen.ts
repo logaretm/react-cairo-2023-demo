@@ -9,7 +9,7 @@ const config: CodegenConfig = {
         useIndexSignature: true,
       },
     },
-    '../schema.graphql': {
+    '../output.graphql': {
       plugins: ['schema-ast'],
     },
   },
