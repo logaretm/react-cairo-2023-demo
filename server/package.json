@@ -1,0 +1,32 @@
+{
+  "name": "react-cairo-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"pnpm graphql-codegen --watch \" \"pnpm nodemon --exec node --loader ts-node/esm src/index.ts\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-gql-types": "graphql-codegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@graphql-tools/graphql-file-loader": "^8.0.0",
+    "@graphql-tools/load": "^8.0.0",
+    "@types/node": "^20.5.0",
+    "concurrently": "^8.2.0",
+    "graphql": "^16.8.0",
+    "graphql-yoga": "^4.0.4",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@parcel/watcher": "^2.2.0"
+  }
+}
